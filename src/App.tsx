@@ -1,5 +1,15 @@
 function App() {
-  return <div>test</div>;
+  return (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      test
+    </div>
+  );
 }
 
 export default App;
