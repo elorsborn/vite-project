@@ -5,9 +5,11 @@ function App() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        color: "red",
+        fontSize: "4rem",
       }}
     >
-      test
+      UPDATED
     </div>
   );
 }
