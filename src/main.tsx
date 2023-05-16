@@ -4,7 +4,6 @@ import App from "./routes/root";
 
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ReloadPrompt from "./ReloadPrompt";
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register(

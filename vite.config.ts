@@ -8,14 +8,14 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "prompt",
-      srcDir: "src",
-      filename: "service-worker.js",
-      strategies: "injectManifest",
-      injectRegister: false,
-      manifest: false,
-      injectManifest: {
-        injectionPoint: null,
-      },
+      // srcDir: "src",
+      // filename: "service-worker.js",
+      // strategies: "injectManifest",
+      // injectRegister: false,
+      // manifest: false,
+      // injectManifest: {
+      //   injectionPoint: null,
+      // },
     }),
   ],
   // plugins: [react()],
