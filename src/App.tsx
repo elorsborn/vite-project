@@ -2,10 +2,8 @@ function App() {
   return (
     <div
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        color: "red",
+        textAlign: "center",
+        color: "green",
         fontSize: "4rem",
       }}
     >
