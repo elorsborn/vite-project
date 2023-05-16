@@ -4,10 +4,19 @@ import App from "./routes/root";
 
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import { registerSW } from "virtual:pwa-register";
-// registerSW({ immediate: true });
+import { registerSW } from "virtual:pwa-register";
 
-// src/main.js or src/main.ts
+const updateSW = registerSW({
+  onNeedRefresh() {
+    console.log("onNeedRefresh");
+  },
+  onOfflineReady() {
+    console.log("onOfflineReady");
+  },
+});
+
+updateSW();
+
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register(
     import.meta.env.MODE === "production"
