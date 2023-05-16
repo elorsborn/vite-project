@@ -9,7 +9,7 @@ function Root() {
       <div
         style={{
           textAlign: "center",
-          color: "yellow",
+          color: "red",
           fontSize: "4rem",
         }}
       >
