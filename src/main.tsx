@@ -4,18 +4,7 @@ import App from "./routes/root";
 
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { registerSW } from "virtual:pwa-register";
-
-const updateSW = registerSW({
-  onNeedRefresh() {
-    console.log("onNeedRefresh");
-  },
-  onOfflineReady() {
-    console.log("onOfflineReady");
-  },
-});
-
-updateSW();
+import ReloadPrompt from "./ReloadPrompt";
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register(
@@ -28,7 +17,12 @@ if ("serviceWorker" in navigator) {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <>
+        <App />
+        <ReloadPrompt />
+      </>
+    ),
   },
   {
     path: "/test",
