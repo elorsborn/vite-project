@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import App from "./routes/root";
+
 import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import { registerSW } from "virtual:pwa-register";
 // registerSW({ immediate: true });
 
@@ -14,8 +16,29 @@ if ("serviceWorker" in navigator) {
   );
 }
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/test",
+    element: (
+      <div
+        style={{
+          textAlign: "center",
+          color: "pink",
+          fontSize: "4rem",
+        }}
+      >
+        test
+      </div>
+    ),
+  },
+]);
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

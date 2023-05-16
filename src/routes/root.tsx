@@ -1,8 +1,10 @@
-import ReloadPrompt from "./ReloadPrompt";
+import { Link } from "react-router-dom";
+import ReloadPrompt from "../ReloadPrompt";
 
-function App() {
+function Root() {
   return (
     <main>
+      <Link to="/test">test</Link>
       <ReloadPrompt />
       <div
         style={{
@@ -17,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default Root;
