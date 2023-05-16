@@ -17,12 +17,7 @@ if ("serviceWorker" in navigator) {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <>
-        <App />
-        <ReloadPrompt />
-      </>
-    ),
+    element: <App />,
   },
   {
     path: "/test",
