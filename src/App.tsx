@@ -3,7 +3,7 @@ function App() {
     <div
       style={{
         textAlign: "center",
-        color: "green",
+        color: "blue",
         fontSize: "4rem",
       }}
     >
