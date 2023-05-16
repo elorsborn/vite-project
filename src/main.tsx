@@ -27,11 +27,11 @@ const router = createBrowserRouter([
       <div
         style={{
           textAlign: "center",
-          color: "pink",
+          color: "green",
           fontSize: "4rem",
         }}
       >
-        test
+        TEST
       </div>
     ),
   },

@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      registerType: "prompt",
       srcDir: "src",
       filename: "service-worker.js",
       strategies: "injectManifest",
