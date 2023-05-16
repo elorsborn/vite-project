@@ -7,7 +7,7 @@ function App() {
       <div
         style={{
           textAlign: "center",
-          color: "blue",
+          color: "pink",
           fontSize: "4rem",
         }}
       >
