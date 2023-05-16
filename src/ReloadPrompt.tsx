@@ -22,6 +22,8 @@ function ReloadPrompt() {
     setNeedRefresh(false);
   };
 
+  console.log(needRefresh, "needRefresh");
+
   return (
     <div className="ReloadPrompt-container">
       {(offlineReady || needRefresh) && (
